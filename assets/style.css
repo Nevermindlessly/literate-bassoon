@@ -1,0 +1,45 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .quiz-container {
+    margin-top: 50px;
+  }
+  
+  .question-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .result-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }  
+
+.hide {
+  display: none;
+}
+
+#highscores-container {
+  margin-top: 20px;
+}
+
+#highscores-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#highscores-list li {
+  margin-bottom: 10px;
+}
+
+#go-back,
+#clear-highscores {
+  margin-top: 10px;
+}

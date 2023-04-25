@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <div id="quiz">
-      <h1>JavaScript  Quiz</h1>
-      <p id="question"></p>
-      <ul id="choices"></ul>
-      <button id="submit">Submit</button>
-      <p id="score">Score: <span id="points">0</span></p>
+    <div class="container">
+      <h1>JavaScript Quiz</h1>
+      <div class="hide" id="quiz-container">
+        <p id="question"></p>
+        <div class="choices">
+          <button class="choice" data-id="0"></button>
+          <button class="choice" data-id="1"></button>
+          <button class="choice" data-id="2"></button>
+          <button class="choice" data-id="3"></button>
+        </div>
+      </div>
+      <div class="result-container hide">
+        <p>Your Score: <span id="score"></span></p>
+        <form>
+          <label for="initials">Enter Initials:</label>
+          <input type="text" id="initials" name="initials" />
+          <button id="save">Save Score</button>
+        </form>
+      </div>
+      <button id="start">Start Quiz</button>
+      <button id="view-highscores">View Highscores</button>
+      <div class="highscores-container hide" id="highscores-container">
+        <ul id="highscores-list"></ul>
+        <button id="go-back">Go Back</button>
+        <button id="clear-highscores">Clear Highscores</button>
+      </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
+
